@@ -1,0 +1,121 @@
+.graphs {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 1px;
+}
+
+.graphs h2 {
+  text-align: center;
+  font-size: 70px;
+  height: 70px;
+  -webkit-text-stroke: 1px rgb(54, 53, 53);
+  color: #191925;
+  text-shadow: 2px 2px 4px rgba(0.3, 0.3, 0.3, 0.3);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.graphs p {
+  -webkit-text-stroke: 1px rgb(54, 53, 53);
+  text-align: center;
+  font-size: 20px;
+  font-weight: 520;
+  height: 50px;
+  color: #07070b;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.graphs .graph-row {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.graphs .graph-container {
+  flex-basis: calc(50% - 10px);
+  margin-bottom: 20px;
+}
+
+.graphs .graph {
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 20px;
+  width: 90%;
+  height: 330px;
+  margin: 0 auto;
+  background-color: #d2d6d6;
+  box-shadow: 5px 4px 5px 1px rgba(0, 0, 0, 0.1);
+  position: relative;
+  justify-content: flex-end;
+}
+.graphs .graph p {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 18px;
+}
+
+@media (min-width: 1500px) {
+  .graphs .graph {
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 20px;
+    width: 89%;
+    height: 495px;
+    margin: 0 auto;
+    background-color: #d2d6d6;
+    box-shadow: 5px 4px 5px 1px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.changeButton {
+  background-color: #3b3c43;
+  border: 0;
+  border-radius: 56px;
+  margin: -20px 20px 20px;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: system-ui, -apple-system, system-ui, "Segoe UI", Roboto, Ubuntu,
+    "Helvetica Neue", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  outline: 0;
+  padding: 6px 10px;
+  position: relative;
+  text-decoration: none;
+  transition: all 0.3s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.changeButton:before {
+  background-color: initial;
+  background-image: linear-gradient(#c7c5c5 0, rgba(255, 255, 255, 0) 100%);
+  border-radius: 125px;
+  content: "";
+  height: 50%;
+  left: 4%;
+  opacity: 0.5;
+  position: absolute;
+  top: 0;
+  transition: all 0.3s;
+  width: 92%;
+}
+
+.changeButton:hover {
+  box-shadow: rgba(255, 255, 255, 0.2) 0 3px 15px inset,
+    rgba(0, 0, 0, 0.1) 0 3px 5px, rgba(0, 0, 0, 0.1) 0 10px 13px;
+  transform: scale(1.05);
+}
+
+@media (min-width: 768px) {
+  .changeButton {
+    padding: 16px 48px;
+  }
+}

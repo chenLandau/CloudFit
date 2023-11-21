@@ -1,0 +1,72 @@
+.home {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.headerContainer {
+  margin-bottom: 30px;
+}
+
+.headerContainer h1 {
+  font-size: 70px;
+  color: rgb(197, 206, 207);
+  text-shadow: 2px 8px 4px rgba(0, 0, 0, 0.3);
+  font-weight: 600;
+  margin-left: 450px;
+  font-family: Tahoma, Verdana, Segoe, sans-serif;
+}
+
+.headerContainer p {
+  font-family: Tahoma, Verdana, Segoe, sans-serif;
+  font-size: 32px;
+  font-weight: lighter;
+  color: rgb(197, 206, 207);
+  margin-left: 450px;
+  margin-bottom: 50px;
+}
+
+.headerContainer button {
+  color: rgb(88, 81, 81);
+  border: 1px solid black;
+  border-radius: 40px;
+  cursor: pointer;
+  align-items: center;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  justify-content: center;
+  background-color: #566161;
+  height: 50px;
+  width: 180px;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  margin-left: 700px;
+}
+
+.headerContainer button:hover {
+  background-color: #07090a;
+  cursor: pointer;
+  transition: 0.3s ease-in;
+}
+
+@media only screen and (min-width: 1500px) {
+  .headerContainer h1 {
+    font-size: 100px;
+    margin-left: 720px;
+  }
+
+  .headerContainer p {
+    font-size: 32px;
+    margin-left: 720px;
+  }
+  .headerContainer button {
+    margin-left: 1150px;
+  }
+}

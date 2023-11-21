@@ -1,0 +1,99 @@
+.navbar {
+  width: 100%;
+  height: 70px;
+  background-image: linear-gradient(
+    90deg,
+    rgba(35, 43, 73, 1) 0%,
+    rgba(25, 33, 86, 1) 49%,
+    rgba(44, 64, 104, 1) 87%
+  );
+  display: flex;
+  flex-direction: row;
+}
+
+.navbar .leftSide {
+  flex: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: 70px;
+}
+
+.navbar .leftSide img {
+  width: 100px;
+  /* float: left; */
+}
+
+.navbar .rightSide {
+  flex: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin: 20px;
+  padding: 0.5em;
+}
+
+.navbar a:hover {
+  background-color: rgba(105, 114, 127, 0.3);
+  border-radius: 10px;
+}
+
+.navbar .rightSide button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.navbar .rightSide svg {
+  font-size: 40px;
+}
+
+.navbar #open {
+  padding-left: 0px;
+}
+.navbar #open img {
+  display: none;
+}
+
+.navbar #close img {
+  display: inherit;
+}
+
+.navbar #open .hiddenLinks {
+  display: inherit;
+  margin-left: 30px;
+}
+
+.navbar #close .hiddenLinks {
+  display: none;
+}
+
+.navbar #open a {
+  width: 70px;
+  margin: 5px;
+}
+@media only screen and (max-width: 900px) {
+  .navbar .rightSide a {
+    width: 70px;
+  }
+  .navbar .leftSide {
+    padding-left: 50px;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .navbar .rightSide button {
+    display: none;
+  }
+
+  .hiddenLinks {
+    display: none;
+  }
+}

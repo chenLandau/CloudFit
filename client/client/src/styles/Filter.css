@@ -1,0 +1,144 @@
+.submitChoice {
+  padding: 1px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
+.submitChoice h1 {
+  font-size: 40px;
+  margin-top: 30px;
+  color: black;
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: 540;
+  font-family: Tahoma, Verdana, Segoe, sans-serif;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0.3, 0.3);
+}
+
+.submitChoice p {
+  max-width: 1200px;
+  margin: 0 auto 40px;
+  font-size: 22px;
+  color: #000000;
+  text-align: center;
+  line-height: 1.5;
+  font-weight: bold;
+}
+
+.submitChoice .grid-item {
+  margin: 15px;
+  border: 5px solid #ccc;
+  border-radius: 2px;
+  background-color: #dddee0;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid-item:hover {
+  background-color: #c1c0c0;
+}
+
+.grid-item h3 {
+  font-family: Tahoma, Verdana, Segoe, sans-serif;
+  font-weight: 500;
+  font-size: 25px;
+  text-decoration: underline;
+}
+
+.grid-item label {
+  margin-bottom: 25px;
+  font-size: 20px;
+  color: #333;
+}
+
+.grid-item input[type="checkbox"] {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.grid-item input[type="checkbox"]:checked::before {
+  content: "\2714";
+  display: inline-block;
+  font-size: 14px;
+  color: #1f2123;
+  width: 14px;
+  height: 14px;
+  text-align: center;
+  line-height: 14px;
+  border: 2px solid #707070;
+  border-radius: 3px;
+  background-color: #fff;
+  margin-right: 5px;
+}
+
+.buttonWrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+}
+.submitChoice button[type="submit"] {
+  background-color: #3b3c43;
+  border: 0;
+  border-radius: 56px;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: system-ui, -apple-system, system-ui, "Segoe UI", Roboto, Ubuntu,
+    "Helvetica Neue", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  outline: 0;
+  padding: 16px 21px;
+  position: relative;
+  text-decoration: none;
+  transition: all 0.3s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.submitChoice button[type="submit"]:before {
+  background-color: initial;
+  background-image: linear-gradient(#808080 0, rgba(255, 255, 255, 0) 100%);
+  border-radius: 125px;
+  content: "";
+  height: 50%;
+  left: 4%;
+  opacity: 0.5;
+  position: absolute;
+  top: 0;
+  transition: all 0.3s;
+  width: 92%;
+}
+
+.submitChoice button[type="submit"]:hover {
+  box-shadow: rgba(255, 255, 255, 0.2) 0 3px 15px inset,
+    rgba(0, 0, 0, 0.1) 0 3px 5px, rgba(0, 0, 0, 0.1) 0 10px 13px;
+  transform: scale(1.05);
+}
+
+@media (min-width: 768px) {
+  .submitChoice button[type="submit"] {
+    padding: 16px 48px;
+  }
+}
+@media (min-width: 1500px) {
+  .submitChoice p {
+    max-width: 1500px;
+  }
+}
+
+.errorContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}

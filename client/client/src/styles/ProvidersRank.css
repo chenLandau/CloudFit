@@ -1,0 +1,87 @@
+.providersRank {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 1px;
+}
+
+.providersRank h1 {
+  text-align: center;
+  font-size: 60px;
+  height: 70px;
+  -webkit-text-stroke: 1px rgb(54, 53, 53);
+  color: #191925;
+  text-shadow: 2px 2px 4px rgba(0.3, 0.3, 0.3, 0.3);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.providersRank p {
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 21px;
+  color: #292929;
+  margin-bottom: 40px;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.rank-container {
+  display: flex;
+  flex-direction: center;
+  align-items: flex-start;
+}
+.rank-card {
+  font-size: 18px;
+  background-image: linear-gradient(
+    90deg,
+    rgba(194, 199, 200, 1) 0%,
+    rgb(229, 229, 229) 100%
+  );
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 27%;
+  margin-right: 13px;
+  margin-bottom: 40px;
+  margin-left: 10px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border: 5px solid #696969;
+}
+.rank-card li {
+  display: flex;
+
+  align-items: center;
+  margin-bottom: 10px;
+  margin-right: 25px;
+  font-size: 20px;
+  font-family: Tahoma, Verdana, Segoe, sans-serif;
+}
+.rank-card h2 {
+  font-size: 24px;
+  font-weight: bold;
+  font-family: Tahoma, Verdana, Segoe, sans-serif;
+}
+
+.rank-position {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+
+  border-radius: 50%;
+  margin-right: 10px;
+  font-weight: bold;
+  background-color: #efefef;
+  border: 2px solid #afafaf;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.rank-position img {
+  width: 90%;
+  height: 80%;
+  object-fit: cover;
+}
